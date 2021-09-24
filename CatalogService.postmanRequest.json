@@ -1,0 +1,441 @@
+{
+	"info": {
+		"_postman_id": "82b109eb-340e-4b79-ba61-aa03cb83a204",
+		"name": "CatalogService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Mickey\",\r\n    \"password\": \"pwd\",\r\n    \"confirmPassword\": \"pwd\",\r\n    \"surname\": \"Mouse\",\r\n    \"deliveryAddress\": \"Via Fantasia 5\",\r\n    \"email\": \"topolino@email.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Donald\",\r\n    \"password\": \"pwd\",\r\n    \"confirmPassword\": \"pwd\",\r\n    \"surname\": \"Duck\",\r\n    \"deliveryAddress\": \"Via Fantasia 1\",\r\n    \"email\": \"paperino@email.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Goofy\",\r\n    \"password\": \"pwd\",\r\n    \"confirmPassword\": \"pwd\",\r\n    \"surname\": \"Goof\",\r\n    \"deliveryAddress\": \"Via Fantasia 3\",\r\n    \"email\": \"pippo@email.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Test\",\r\n    \"password\": \"pwd\",\r\n    \"confirmPassword\": \"pwd\",\r\n    \"surname\": \"Email\",\r\n    \"deliveryAddress\": \"Via Fantasia 10\",\r\n    \"email\": \"email.CatalogService@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"topolino@email.com\",\r\n    \"password\": \"pwd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendAgainConfirmation",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/auth/sendAgain?email=rossivale891@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"sendAgain"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "rossivale891@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateInformationUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSIiwic3ViIjoiYm9iQGRvbWFpbi5jb20ifQ.43MJ3ymX7mhKCn4WOXECL3DMBWsh3Wvzd1S0ANV7KCk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Bob\",\r\n    \"deliveryAddress\": \"Via Fantasia 12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/updateInformation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"updateInformation"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSIiwic3ViIjoibHVjYUBlbWFpbC5jb20ifQ.AOgI6zK5ebyCZ3OEJtTQQNIG34dSWlbEDYkRyBTgBns",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConfirmEmail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/auth/registrationConfirm?token=94a9f7a0-4ea6-4407-83af-ddefb83edc20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"registrationConfirm"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "94a9f7a0-4ea6-4407-83af-ddefb83edc20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DisableUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSLCBBRE1JTiIsInN1YiI6InBpcHBvQGVtYWlsLmNvbSJ9.csBGloFWvqB5gUb-VSyUWvhJLnIQNZsXl0atzCaXoTI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/user/paperino@email.com/disable",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"paperino@email.com",
+						"disable"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EnableUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSLCBBRE1JTiIsInN1YiI6InBpcHBvQGVtYWlsLmNvbSJ9.csBGloFWvqB5gUb-VSyUWvhJLnIQNZsXl0atzCaXoTI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/user/paperino@email.com/enable",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"paperino@email.com",
+						"enable"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddRole",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSLEFETUlOIiwic3ViIjoiYm9iQGRvbWFpbi5jb20ifQ.L-1usnYr4poDifP6GaeZSzanQ-sMr-06Pg_AG_X8rG8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/user/paperino@email.com/addRole?role=ADMIN",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"paperino@email.com",
+						"addRole"
+					],
+					"query": [
+						{
+							"key": "role",
+							"value": "ADMIN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveRole",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSLEFETUlOIiwic3ViIjoiYm9iQGRvbWFpbi5jb20ifQ.L-1usnYr4poDifP6GaeZSzanQ-sMr-06Pg_AG_X8rG8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/user/paperino@email.com/removeRole?role=CUSTOMER",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"paperino@email.com",
+						"removeRole"
+					],
+					"query": [
+						{
+							"key": "role",
+							"value": "CUSTOMER"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RetrieveInformation",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSIiwic3ViIjoiYm9iQGRvbWFpbi5jb20ifQ.43MJ3ymX7mhKCn4WOXECL3DMBWsh3Wvzd1S0ANV7KCk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/user/retrieveInformation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"retrieveInformation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSIiwic3ViIjoiYm9iQGRvbWFpbi5jb20ifQ.43MJ3ymX7mhKCn4WOXECL3DMBWsh3Wvzd1S0ANV7KCk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"oldPassword\": \"pwd\",\r\n    \"newPassword\": \"1234\",\r\n    \"confirmPassword\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/updatePassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"updatePassword"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
