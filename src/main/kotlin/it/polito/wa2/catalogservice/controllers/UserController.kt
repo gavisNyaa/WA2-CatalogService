@@ -17,7 +17,7 @@ import javax.validation.Valid
 class UserController(
     val userDetailsService: UserDetailsService,
     ) {
-    @PostMapping("/updateInformation")
+    @PatchMapping("/updateInformation")
     fun updateInformation(@Valid @RequestBody body: InformationUpdateDTO, br: BindingResult): ResponseEntity<Any> {
         if (br.hasErrors()) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Message(br.allErrors[0].defaultMessage))
@@ -30,7 +30,7 @@ class UserController(
         return ResponseEntity.status(HttpStatus.OK).body(Message("Information updated"))
     }
 
-    @PostMapping("/updatePassword")
+    @PutMapping("/updatePassword")
     fun updatePassword(@Valid @RequestBody body: PasswordUpdateDTO, br:BindingResult): ResponseEntity<Any> {
         if (br.hasErrors()) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Message(br.allErrors[0].defaultMessage))

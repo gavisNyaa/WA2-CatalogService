@@ -99,7 +99,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Test\",\r\n    \"password\": \"pwd\",\r\n    \"confirmPassword\": \"pwd\",\r\n    \"surname\": \"Email\",\r\n    \"deliveryAddress\": \"Via Fantasia 10\",\r\n    \"email\": \"email.CatalogService@gmail.com\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Test\",\r\n    \"password\": \"pwd\",\r\n    \"confirmPassword\": \"pwd\",\r\n    \"surname\": \"Email\",\r\n    \"deliveryAddress\": \"Via Fantasia 10\",\r\n    \"email\": \"wa2team01@gmail.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -168,7 +168,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/auth/sendAgain?email=rossivale891@gmail.com",
+					"raw": "localhost:8080/auth/sendAgain?email=wa2team01@gmail.com",
 					"host": [
 						"localhost"
 					],
@@ -180,7 +180,7 @@
 					"query": [
 						{
 							"key": "email",
-							"value": "rossivale891@gmail.com"
+							"value": "wa2team01@gmail.com"
 						}
 					]
 				}
@@ -193,11 +193,11 @@
 				"auth": {
 					"type": "noauth"
 				},
-				"method": "POST",
+				"method": "PATCH",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSIiwic3ViIjoiYm9iQGRvbWFpbi5jb20ifQ.43MJ3ymX7mhKCn4WOXECL3DMBWsh3Wvzd1S0ANV7KCk",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSIiwic3ViIjoidG9wb2xpbm9AZW1haWwuY29tIn0.T-qN_bRMGdMfcQmUgHWZHNRxsrELW4dsLXAI7cnjKqo",
 						"type": "text"
 					}
 				],
@@ -265,7 +265,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSLCBBRE1JTiIsInN1YiI6InBpcHBvQGVtYWlsLmNvbSJ9.csBGloFWvqB5gUb-VSyUWvhJLnIQNZsXl0atzCaXoTI",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSLEFETUlOIiwic3ViIjoidG9wb2xpbm9AZW1haWwuY29tIn0.3BV0MXOPgT5B0THmnKjWRqakU3Hm1I3gRx0jdkudQp0",
 						"type": "text"
 					}
 				],
@@ -292,7 +292,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSLCBBRE1JTiIsInN1YiI6InBpcHBvQGVtYWlsLmNvbSJ9.csBGloFWvqB5gUb-VSyUWvhJLnIQNZsXl0atzCaXoTI",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSIiwic3ViIjoidG9wb2xpbm9AZW1haWwuY29tIn0.T-qN_bRMGdMfcQmUgHWZHNRxsrELW4dsLXAI7cnjKqo",
 						"type": "text"
 					}
 				],
@@ -319,7 +319,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSLEFETUlOIiwic3ViIjoiYm9iQGRvbWFpbi5jb20ifQ.L-1usnYr4poDifP6GaeZSzanQ-sMr-06Pg_AG_X8rG8",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSLEFETUlOIiwic3ViIjoidG9wb2xpbm9AZW1haWwuY29tIn0.3BV0MXOPgT5B0THmnKjWRqakU3Hm1I3gRx0jdkudQp0",
 						"type": "text"
 					}
 				],
@@ -351,7 +351,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSLEFETUlOIiwic3ViIjoiYm9iQGRvbWFpbi5jb20ifQ.L-1usnYr4poDifP6GaeZSzanQ-sMr-06Pg_AG_X8rG8",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSLEFETUlOIiwic3ViIjoidG9wb2xpbm9AZW1haWwuY29tIn0.3BV0MXOPgT5B0THmnKjWRqakU3Hm1I3gRx0jdkudQp0",
 						"type": "text"
 					}
 				],
@@ -383,7 +383,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSIiwic3ViIjoiYm9iQGRvbWFpbi5jb20ifQ.43MJ3ymX7mhKCn4WOXECL3DMBWsh3Wvzd1S0ANV7KCk",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSIiwic3ViIjoidG9wb2xpbm9AZW1haWwuY29tIn0.T-qN_bRMGdMfcQmUgHWZHNRxsrELW4dsLXAI7cnjKqo",
 						"type": "text"
 					}
 				],
@@ -405,11 +405,11 @@
 		{
 			"name": "UpdatePassword",
 			"request": {
-				"method": "POST",
+				"method": "PUT",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSIiwic3ViIjoiYm9iQGRvbWFpbi5jb20ifQ.43MJ3ymX7mhKCn4WOXECL3DMBWsh3Wvzd1S0ANV7KCk",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSIiwic3ViIjoidG9wb2xpbm9AZW1haWwuY29tIn0.T-qN_bRMGdMfcQmUgHWZHNRxsrELW4dsLXAI7cnjKqo",
 						"type": "text"
 					}
 				],
