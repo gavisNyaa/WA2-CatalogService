@@ -128,7 +128,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\": \"topolino@email.com\",\r\n    \"password\": \"pwd\"\r\n}",
+					"raw": "{\r\n    \"email\": \"topolino@email.com\",\r\n    \"password\": \"1234\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -432,6 +432,32 @@
 					"path": [
 						"user",
 						"updatePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListUser",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IkNVU1RPTUVSIiwic3ViIjoid2EydGVhbTAxQGdtYWlsLmNvbSJ9.chJXh80Qv--68hNKIBaNe7JSFXMZeuQ4eNA4lvxptbA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/user/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"list"
 					]
 				}
 			},

@@ -1,6 +1,7 @@
 package it.polito.wa2.catalogservice.services
 
 import it.polito.wa2.catalogservice.domain.User
+import it.polito.wa2.catalogservice.dto.InformationUpdateDTO
 import it.polito.wa2.catalogservice.dto.UserDetailsDTO
 import org.springframework.security.core.userdetails.UserDetailsService
 
@@ -14,6 +15,8 @@ interface UserDetailsService: UserDetailsService {
         surname: String,
         deliveryAddress: String
     ): UserDetailsDTO
+
+    fun getAll(): List<InformationUpdateDTO>
 
     fun addRole(email: String, role: User.RoleName): UserDetailsDTO
 

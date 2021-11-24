@@ -72,6 +72,11 @@ class UserController(
         userDetailsService.removeRole(username, User.RoleName.valueOf(role))
     }
 
+    @GetMapping("/list")
+    fun listUsers(): List<InformationUpdateDTO> {
+        return userDetailsService.getAll()
+    }
+
     @ExceptionHandler
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ResponseBody

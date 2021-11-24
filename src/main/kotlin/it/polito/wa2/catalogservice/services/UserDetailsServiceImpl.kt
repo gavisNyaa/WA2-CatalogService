@@ -1,6 +1,7 @@
 package it.polito.wa2.catalogservice.services
 
 import it.polito.wa2.catalogservice.domain.User
+import it.polito.wa2.catalogservice.dto.InformationUpdateDTO
 import it.polito.wa2.catalogservice.dto.UserDetailsDTO
 import it.polito.wa2.catalogservice.repositories.EmailVerificationTokenRepository
 import it.polito.wa2.catalogservice.repositories.UserRepository
@@ -31,6 +32,11 @@ class UserDetailsServiceImpl(
         val user = repository.findByEmail(email)
             ?: return null
         return user.toDTO()
+    }
+
+    @Secured("ROLE_ADMIN")
+    override fun getAll(): List<InformationUpdateDTO> {
+        return repository.findAll().map{user->InformationUpdateDTO(user.email, user.name, user.surname, user.deliveryAddress)}
     }
 
     override fun create(

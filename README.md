@@ -52,3 +52,7 @@ Consents to add a role to the user with the email in the path variable
 * **POST /user/{email}/removeRole**
 
 Consents to remove a role to the user with the email in the path variable
+
+* **GET /user/list**
+
+Consents to retrieve the list of all users
