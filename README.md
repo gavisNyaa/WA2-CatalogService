@@ -22,11 +22,11 @@ Needs email and password in the body for login
 ----
 > _Only for login user:_
 ____
-* **POST /user/updateInformation**
+* **PATCH /user/updateInformation**
 
 Consents to update one or more user information, it accepts, in the body: name, surname, email, delivery address
 
-* **POST /user/updatePassword**
+* **PUT /user/updatePassword**
 
 Needs the old password, the new password and confirm password in the body for update the user password
 
@@ -34,18 +34,21 @@ Needs the old password, the new password and confirm password in the body for up
 
 Without param it sends the basic information of the user: name, surname, email and delivery address
 
+----
+> _Only for admin:_
+____
 * **POST /user/{email}/enable**
 
-Method only for admin, consents to enable a user with the email in the path variable
+Consents to enable a user with the email in the path variable
 
 * **POST /user/{email}/disable**
 
-Method only for admin, consents to disable a user with the email in the path variable
+Consents to disable a user with the email in the path variable
 
 * **POST /user/{email}/addRole**
 
-Method only for admin, consents to add a role to the user with the email in the path variable
+Consents to add a role to the user with the email in the path variable
 
 * **POST /user/{email}/removeRole**
 
-Method only for admin, consents to remove a role to the user with the email in the path variable
+Consents to remove a role to the user with the email in the path variable
